@@ -17,3 +17,25 @@ PACKAGES=(
 
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
+
+echo "Installing cask..."
+
+CASKS=(
+  1password
+  alfred
+  charles
+  docker
+  firefox
+  harvest
+  hyper
+  microsoft-teams
+  paw
+  skitch
+  slack
+  spotify
+  visual-studio-code
+  zoom
+)
+
+echo "Installing cask apps..."
+brew cask install ${CASKS[@]}
