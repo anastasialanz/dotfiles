@@ -26,6 +26,7 @@ CASKS=(
   charles
   docker
   firefox
+  google-chrome
   harvest
   hyper
   microsoft-teams
