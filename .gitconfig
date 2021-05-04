@@ -1,21 +1,21 @@
 [user]
-  name = anastasialanz
-  email = anastasia@heysparkbox.com
-  signingkey = 034BC106
+      name = anastasialanz
+      email = anastasia@heysparkbox.com
+      signingkey = 3B3E2F0F
 [commit]
-  gpgsign = true
-  template = ~/.gitmessage
+      gpgsign = true
+      template = ~/.gitmessage
 [secrets]
-  providers = ~/sites/secrets/provider.js
+      providers = ~/sites/secrets/provider.js
 [alias]
-  co = checkout
-  br = branch
-  ci = commit
-  st = status
-  pushf = push --force-with-lease
+      co = checkout
+      br = branch
+      ci = commit
+      st = status
+      pushf = push --force-with-lease
 [core]
-  excludesfile = ~/.gitignore_global
+      excludesfile = ~/.gitignore_global
 [credential]
-  helper = store
+      helper = store
 [pull]
-  rebase = true
+      rebase = true
