@@ -58,3 +58,6 @@ for link in .gitconfig .gitignore_global .gitmessage .zshrc .zprofile; do
     ln -s "$PWD/$link" "$HOME/$link"
   fi
 done
+
+echo "Setup NVM"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
