@@ -40,3 +40,21 @@ CASKS=(
 
 echo "Installing cask apps..."
 brew install --cask ${CASKS[@]}
+
+echo "Setup oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "Setup Dotfiles"
+if [ ! -d ~/dotfiles ]; then
+  git clone git@github.com:anastasialanz/dotfiles.git ~/dotfiles
+fi
+
+cd ~/dotfiles
+
+for link in .gitconfig .gitignore_global .gitmessage .zshrc .zprofile; do
+  if [ -L "$HOME/$link" ]; then
+    echo "Link '$link' exists"
+  else
+    ln -s "$PWD/$link" "$HOME/$link"
+  fi
+done
