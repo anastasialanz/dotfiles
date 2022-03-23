@@ -1,12 +1,10 @@
 [user]
       name = anastasialanz
-      email = anastasia@heysparkbox.com
-      signingkey = 3B3E2F0F
+      email = anastasia.lanz@deque.com
+      signingkey = 273E29E5
 [commit]
       gpgsign = true
       template = ~/.gitmessage
-[secrets]
-      providers = ~/sites/secrets/provider.js
 [alias]
       co = checkout
       br = branch
