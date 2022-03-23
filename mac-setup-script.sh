@@ -27,9 +27,7 @@ CASKS=(
   docker
   firefox
   google-chrome
-  harvest
   hyper
-  microsoft-teams
   paw
   skitch
   slack
